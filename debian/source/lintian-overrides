@@ -1,0 +1,9 @@
+# random test vector verbatim
+node-buffer source: very-long-line-length-in-source-file perf/readUtf8.js *
+node-buffer source: source-contains-prebuilt-javascript-object perf/readUtf8.js *
+node-buffer source: source-is-missing perf/readUtf8.js *
+# random utf8 string
+node-buffer source: very-long-line-length-in-source-file test/to-string.js *
+node-buffer source: source-contains-prebuilt-javascript-object test/to-string.js *
+node-buffer source: source-is-missing test/to-string.js *
+

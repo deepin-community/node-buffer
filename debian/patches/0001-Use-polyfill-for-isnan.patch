@@ -1,0 +1,26 @@
+Description: Use polyfill for isnan
+ Do not need for test suite to use package.
+Author: Bastien Roucariès <roucaries.bastien@gmail.com>
+Forwarded: not-needed
+Reviewed-By: Xavier Guimard <yadd@debian.org>
+Last-Update: 2020-12-09
+
+--- a/test/write.js
++++ b/test/write.js
+@@ -1,6 +1,15 @@
+ const B = require('../').Buffer
+ const test = require('tape')
+-const isnan = require('is-nan')
++
++if (!Number.isNaN){
++    Number.isNaN = function isNaN(x){
++	return x !== x;
++    };
++}
++
++const isnan = function isNaN(value) {
++    return value !== value;
++};
+ 
+ test('buffer.write string should get parsed as number', function (t) {
+   const b = new B(64)

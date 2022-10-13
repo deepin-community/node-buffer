@@ -1,0 +1,35 @@
+Source: node-buffer
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Bastien Roucariès <rouca@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+ , node-base64-js <!nocheck>
+ , node-ieee754 <!nocheck>
+ , node-is-buffer <!nocheck>
+ , node-tap (>= 10) <!nocheck>
+ , node-tape <!nocheck>
+ , dh-sequence-nodejs
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-buffer
+Vcs-Git: https://salsa.debian.org/js-team/node-buffer.git
+Homepage: https://github.com/feross/buffer
+Rules-Requires-Root: no
+
+Package: node-buffer
+Architecture: all
+Depends: ${misc:Depends}
+ , node-base64-js
+ , node-ieee754
+ , nodejs (>= 10)
+Provides: node-types-buffer (= ${source:Version})
+Multi-Arch: foreign
+Description: Node.js Buffer API for browserify
+ node-buffer is a port of well known buffer API of nodejs to browser context.
+ .
+ Using require('buffer')` or the `Buffer` global variable will allow
+ browserify program to include automatically this module on your code.
+ Thus any npm module using buffer features will work in the browser.
+ .
+ Node.js is an event-based server-side JavaScript engine.

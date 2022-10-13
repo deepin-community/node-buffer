@@ -1,0 +1,120 @@
+node-buffer (6.0.3-1) unstable; urgency=medium
+
+  * Team upload
+  * Apply multi-arch hints (foreign)
+  * Declare compliance with policy 4.5.1
+  * Modernize debian/watch
+  * New upstream version 6.0.3
+  * Refresh patch
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 09 Dec 2020 10:40:06 +0100
+
+node-buffer (5.7.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 5.7.0
+  * refresh patch
+  * Update copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 02 Nov 2020 13:47:22 +0100
+
+node-buffer (5.6.1-1) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 13
+  * Use dh-sequence-nodejs
+  * New upstream version 5.6.1
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 25 Oct 2020 08:03:44 +0100
+
+node-buffer (5.6.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Update renamed lintian tag names in lintian overrides.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Xavier Guimard ]
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Use pkg-js-tools auto test & install
+  * New upstream version 5.6.0
+  * Drop unneeded version constraints from (build) dependencies
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 23 May 2020 13:03:25 +0200
+
+node-buffer (5.4.2-1) unstable; urgency=medium
+
+  * New upstream version: fix inspect
+  * Update debian/copyright
+  * Move to /usr/share
+  * Bump policy and debhelper
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 04 Sep 2019 15:49:13 +0200
+
+node-buffer (5.2.1-1) unstable; urgency=medium
+
+  * New upstream version: fixes types
+  * Bump policy (no changes)
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 31 Oct 2018 11:18:20 +0100
+
+node-buffer (5.2.0-1) unstable; urgency=medium
+
+  * New upstream version
+  * Bump policy
+  * Install index.d.ts
+
+ -- Bastien Roucariès <rouca@debian.org>  Tue, 07 Aug 2018 18:59:36 +0200
+
+node-buffer (5.1.0-2) unstable; urgency=medium
+
+  * Move to salsa
+
+ -- Bastien Roucariès <rouca@debian.org>  Tue, 19 Jun 2018 18:10:30 +0200
+
+node-buffer (5.1.0-1) unstable; urgency=medium
+
+  * New upstream version
+  * Bump compat and policy
+  * Fix lintian warnings
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 19 Feb 2018 22:51:28 +0100
+
+node-buffer (5.0.8-1) unstable; urgency=medium
+
+  * New upstream version
+  * Bump policy (no changes)
+  * move to section javascript
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 04 Oct 2017 23:03:52 +0200
+
+node-buffer (5.0.7-1) unstable; urgency=medium
+
+  * New upstream version
+  * Bump policy, no changes
+  * Add authors to copyright
+
+ -- Bastien Roucariès <rouca@debian.org>  Sat, 12 Aug 2017 23:06:14 +0200
+
+node-buffer (5.0.6-2) unstable; urgency=medium
+
+  * Fix cli test.
+
+ -- Bastien Roucariès <rouca@debian.org>  Thu, 13 Apr 2017 23:54:33 +0200
+
+node-buffer (5.0.6-1) unstable; urgency=medium
+
+  * New upstream version.
+  * Enable testsuite.
+
+ -- Bastien Roucariès <rouca@debian.org>  Sun, 09 Apr 2017 18:35:36 +0200
+
+node-buffer (5.0.5-1) unstable; urgency=low
+
+  * Initial release (Closes: #859002)
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 29 Mar 2017 15:10:45 +0200
